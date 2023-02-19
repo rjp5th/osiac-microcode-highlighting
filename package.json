@@ -1,0 +1,35 @@
+{
+  "name": "osiac-microcode-syntax",
+  "displayName": "OSIAC Microcode Syntax Highlighting",
+  "description": "Adds microcode syntax highlighting for the OSIAC Computer",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "keywords": ["OSIAC", "Ohio State University", "ECE5362"],
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "url": "https://github.com/rjp5th/osiac-microcode-highlighting"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "publisher": "rjp5th",
+  "license": "GPL-3.0-or-later",
+  "icon": "images/icon.png",
+  "contributes": {
+    "languages": [{
+      "id": "osiac_microcode",
+      "aliases": ["OSIAC Microcode", "osiac_microcode"],
+      "extensions": [".dat"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "osiac_microcode",
+      "scopeName": "source.osiac_microcode",
+      "path": "./syntaxes/osiac_microcode.tmLanguage"
+    }]
+  }
+}
